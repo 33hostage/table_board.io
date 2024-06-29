@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Doska</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<script src="app.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<container class="container">
+		<div id="data" class="data">
+			<input type="number" id="id" placeholder="ID" required>
+			<input type="text" id="name" placeholder="Имя" required>
+			<input type="text" id="city" placeholder="Город" required>
+			<input type="date" id="date" placeholder="Дата" required>
+			<select name="Статус" id="status">
+				<option value="Обработан" class="processed">Обработан</option>
+				<option value="Сортировка" class="option">Сортировка</option>
+				<option value="В пути" class="option">В пути</option>
+				<option value="Доставлен" class="option">Доставлен</option>
+			</select>
+<!-- 			<input type="text" id="status" placeholder="Статус" required> -->
+			<input type="number" id="cash" placeholder="Сумма" required>
+			<button type="submit" class="btn" id="btn">Добавить</button>
+		</div>
+	</container>
+
+	<main class="table">
+
+		<section class="table__head">
+			<h1>Заказ</h1>
+		</section>
+		<section class="table__body">
+			<table>
+
+				<thead>
+					<tr>
+						<th>id</th>
+						<th>Клиент</th>
+						<th>Город</th>
+						<th>Дата</th>
+						<th>Cтатус</th>
+						<th>Сумма</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Валерий Альбертович Ж.</td>
+						<td>Боровск</td>
+						<td>29.09.2024</td>
+						<td><p class="status">В пути</p></td>
+						<td><strong>2000р</strong></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+
+	</main>
+	
+</body>
+
+</html>

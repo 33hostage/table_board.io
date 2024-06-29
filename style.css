@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: Ubuntu, sans-serif;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+/* 	justify-content: center; */
+	align-items: center;
+	background: url(main.jpg) center / cover;
+	background-repeat: no-repeat;
+}
+
+
+.container {
+	width: 1500px;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: rgba(200, 200, 200, 0.5);
+	backdrop-filter: blur(6px);
+	border-radius: 10px;
+}
+
+.data input, select {
+	width: 200px;
+	padding: 10px;
+	border: 1px solid rgb(184, 184, 184);
+	border-radius: 5px;
+	background-color: rgba(222, 222, 222, 0.7);
+	color: rgb(37, 37, 37);
+	outline:none;
+}
+
+.btn {
+	margin-top: 10px;
+	padding: 10px;
+	width: 200px;
+	background-color: #00cc66;
+	color: aliceblue;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+
+.table__head {
+	background-color: rgba(244, 244, 244, 0.267);
+	width: 100%;
+	padding: 20px;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.table__body {
+	background-color: rgba(244, 244, 244, 0.733);
+	margin-top: 20px;
+	margin: 20px auto;
+	width: 95%;
+	border-radius: 10px;
+}
+
+.table {
+	width: 800px;
+	background-color: #fff5;
+	backdrop-filter: blur(6px);
+	border-radius: 15px;
+	box-shadow: 0px 5px 10px #0005;
+}
+
+table, th, td {
+	border-collapse: collapse;
+	padding: 1rem;
+	text-align: left;
+}
+
+table {
+	width: 100%;
+}
+
+thead th {
+	position: sticky;
+	background-color: rgb(194, 193, 224);
+}
+
+tbody tr:nth-child(even) {
+	background-color: #0000000b;
+}
+
+tbody tr:hover {
+	background-color: #fff6;
+}
+
+.status {
+	text-align: center;
+	padding: 4px;
+	border-radius: 2rem;
+	background-color: #73e08e;
+	color: #003511;
+}
